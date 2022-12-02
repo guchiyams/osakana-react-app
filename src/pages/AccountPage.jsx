@@ -13,11 +13,18 @@ const AccountPage = ({ state }) => {
       account_state = <Dashboard />;
   }
 
+
   return (
-    <div>
-      {account_state}
-    </div>
+    <>
+      <div>
+        hello world
+      </div>
+      <div>
+        {account_state}
+      </div>
+    </>
   );
+
 }
 
 export default AccountPage
