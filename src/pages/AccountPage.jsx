@@ -2,26 +2,22 @@ import React from 'react'
 
 import Login from '../components/Login/Login';
 import Dashboard from '../components/Dashboard/Dashboard';
-
+import Register from '../components/Register/Register'
 
 const AccountPage = ({ state }) => {
   let account_state;
 
   if (state === "login") {
-      account_state = <Login />;
+    account_state = <Login />;
   } else if (state === "dashboard") {
-      account_state = <Dashboard />;
-  }
-
+    account_state = <Dashboard />;
+  } else if (state === "register") (
+    account_state = <Register />
+  )
 
   return (
     <>
-      <div>
-        hello world
-      </div>
-      <div>
-        {account_state}
-      </div>
+      {account_state}
     </>
   );
 

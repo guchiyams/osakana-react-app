@@ -12,6 +12,7 @@ function App() {
         <Routes>
           <Route path="/" element={<LandingPage/>} />
           <Route path="/login" element={<AccountPage state="login" />} />
+          <Route path="/register" element={<AccountPage state="register" />} />
           <Route path="/dashboard" element={<AccountPage state="dashboard" />} />
 
           <Route path="/admin" element={<AdminPage />} />
