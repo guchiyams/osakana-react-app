@@ -4,6 +4,8 @@ import Login from '../components/Login/Login';
 import Dashboard from '../components/Dashboard/Dashboard';
 import Register from '../components/Register/Register'
 
+import './css/AccountPage.css';
+
 const AccountPage = ({ state }) => {
   let account_state;
 
@@ -17,7 +19,7 @@ const AccountPage = ({ state }) => {
 
   return (
     <>
-      {account_state}
+        {account_state}
     </>
   );
 

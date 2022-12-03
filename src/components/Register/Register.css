@@ -1,14 +1,150 @@
-.form-wrapper {
-    width: 40%;
+/* https://colorhunt.co/palette/f6f6c9bad1c24fa095153462 */
+/* F6F6C9
+BAD1C2
+4FA095
+153462 */
+
+
+.register-container {
     height: 100vh;
-    margin: auto;
+    background-color: #BAD1C2;
+}
+
+.register {
+    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
 }
 
-.form-card {
-    border: solid lightgray 2px;
-    border-radius: 10%;
-    padding: 5%;
+/* -- FISH IMG STYLING START -- */
+.register-fish {
+    /* hover fall back */
+    transform: scale(1);
+    width: 5rem;
+    transition: transform 330ms ease-in-out;
+}
+.register-fish:hover {
+    /* hover in */
+    transform: scale(1.1);
+    transition: transform 330ms ease-in-out;
+}
+/* -- FISH IMG STYLING END -- */
+
+.register__title-container {
+    text-align: center;
+    margin: 1rem;
+}
+
+.register__title {
+    color: coral;
+}
+
+.register-form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.register-form__name-container {
+    display: flex;
+    /* gap: 0.5rem; */
+}
+
+.register-form__email-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.register-form__password-container {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.register-form__btn-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.register-form__textBox-half {
+    background-color: #F4F5F5;
+    color: #818282;
+    border-style: none;
+    border-radius: 60px;
+    padding: 10px;
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.register-form__textBox-full {
+    background-color: #F4F5F5;
+    color: #818282;
+    border-style: none;
+    border-radius: 60px;
+    padding: 10px;
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+/* -- REGISTER BTN START -- */
+.register-form__btn {
+    background-color: #4FA095;
+    border-radius: 60px;
+    border-style: none;
+
+    color: white;
+
+    font-size: 18px;
+
+    padding: 10px;
+    text-decoration: none;
+}
+
+.register-form__btn:hover {
+
+}
+
+/* CSS */
+.button-1 {
+  background-color: #EA4C89;
+  border-radius: 8px;
+  border-style: none;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  height: 40px;
+  line-height: 20px;
+  list-style: none;
+  margin: 0;
+  outline: none;
+  padding: 10px 16px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  transition: color 100ms;
+  vertical-align: baseline;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-1:hover,
+.button-1:focus {
+  background-color: #F082AC;
+}
+/* -- REGISTER BTN END -- */
+
+@media (max-width: 500px) {
+
+    .register-form__name-container {
+        display: flex;
+        flex-direction: column;
+    }
+
 }
