@@ -5,12 +5,12 @@ BAD1C2
 153462 */
 
 
-.register-container {
+.login-container {
     height: 100vh;
     background-color: #BAD1C2;
 }
 
-.register {
+.login {
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -18,7 +18,7 @@ BAD1C2
     align-items: center;
 }
 
-.register-card {
+.login-card {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -34,7 +34,7 @@ BAD1C2
 }
 
 /* -- FISH IMG STYLING START -- */
-.register-fish {
+.login-fish {
     /* hover fall back */
     width: 5rem;
     transform: scale(1);
@@ -42,47 +42,46 @@ BAD1C2
     margin: 0px;
     padding: 0px;
 }
-.register-fish:hover {
+.login-fish:hover {
     /* hover in */
     transform: scale(1.1);
     transition: transform 330ms ease-in-out;
 }
 /* -- FISH IMG STYLING END -- */
 
-.register__title-container {
+.login__title-container {
     text-align: center;
     margin: 1rem;
 }
 
-.register__title {
+.login__title {
     color: white;
 
 }
 
-.register-form {
+.login-form {
     display: flex;
     flex-direction: column;
     width: 100%;
 }
 
-.register-form__email-container {
+.login-form__email-container {
     display: flex;
     flex-direction: column;
 }
 
-.register-form__password-container {
+.login-form__password-container {
     display: flex;
     flex-direction: column;
-
 }
 
-.register-form__btn-container {
+.login-form__btn-container {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.register-form__textBox-half {
+.login-form__textBox-half {
     background-color: #F4F5F5;
     color: #818282;
     border-style: none;
@@ -92,7 +91,7 @@ BAD1C2
     margin-bottom: 15px;
 }
 
-.register-form__textBox-full {
+.login-form__textBox-full {
     background-color: #F4F5F5;
     color: #818282;
     border-style: none;
@@ -102,8 +101,8 @@ BAD1C2
     margin-bottom: 15px;
 }
 
-/* -- REGISTER BTN START -- */
-.register-form__btn {
+/* -- login BTN START -- */
+.login-form__btn {
     background-color: #4FA095;
     border-radius: 60px;
     border-style: none;
@@ -122,19 +121,29 @@ BAD1C2
     width: 100%;
 }
 
-.register-form__btn:hover {
+.login-form__btn:hover {
     background-color: #153462;
     transition: background-color 330ms ease-in-out;
 }
-/* -- REGISTER BTN END -- */
+/* -- login BTN END -- */
+
+.login-error-msg-container {
+    display: flex;
+    justify-content: center;
+    margin: 0.25rem;
+}
+
+.login-form__error-msg {
+    color: red;
+}
 
 @media (max-width: 600px) {
-    .register-container {
+    .login-container {
         min-height: 100vh;
         min-height: -webkit-fill-available;
     }
 
-    .register-card {
+    .login-card {
         display: flex;
         flex-direction: column;
         align-items: center;

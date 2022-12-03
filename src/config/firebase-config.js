@@ -11,6 +11,17 @@ import {
   confirmPasswordReset,
   updatePassword,
 } from "firebase/auth";
+import {
+  getFirestore,
+  query,
+  doc,
+  getDocs,
+  collection,
+  where,
+  addDoc,
+  deleteDoc,
+  updateDoc,
+} from "firebase/firestore";
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
 
@@ -27,7 +38,7 @@ const firebaseConfig = {
 // initialize firebase
 const app = initializeApp(firebaseConfig);
 const auth = getAuth(app);
-// const db = getFirestore(app);
+const db = getFirestore(app);
 // const storage = getStorage(app);
 
 // Login function
@@ -41,15 +52,23 @@ const logInWithEmailAndPassword = async (email, password, setIncorrect) => {
 };
 
 // Register function with email/password
-const registerWithEmailAndPassword = async(e, firstName, lastName, type, email, password, country, city, phoneNumber, hear, registerDate,  accountMail, marketingMail) => {
+const registerWithEmailAndPassword = async(firstName, lastName, email, password) => {
   try {
     const res = await createUserWithEmailAndPassword(auth, email, password);
-    return res.user;
+    const user = res.user;
+    const name = firstName + " " + lastName
 
+    await addDoc(collection(db, "users"), {
+      uid: user.uid,
+      firstName, 
+      lastName,
+      authProvider: "local",
+      email
+    });
   } catch (err) {
     console.error(err.message);
     //Email exists?
-    if (err.message = "EMAIL_EXISTS") return true
+    if (err.message = "EMAIL_EXISTS") return true;
   }
 };
 

@@ -132,6 +132,16 @@ BAD1C2
 }
 /* -- REGISTER BTN END -- */
 
+.register-error-msg-container {
+    display: flex;
+    justify-content: center;
+    margin: 0.25rem;
+}
+
+.register-form__error-msg {
+    color: red;
+}
+
 @media (max-width: 600px) {
     .register-container {
         min-height: 100vh;
