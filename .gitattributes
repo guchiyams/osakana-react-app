@@ -1,4 +1,2 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:cf5a1b9f8a0e4ea1fa08726f92e0e880bd41b41647945ebe8e5c3e28b0aaeb39
-size 56847
+*/9.pack filter=lfs diff=lfs merge=lfs -text
 node_modules/.cache/default-development/9.pack filter=lfs diff=lfs merge=lfs -text
