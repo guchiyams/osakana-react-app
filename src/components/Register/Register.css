@@ -21,8 +21,8 @@ BAD1C2
 /* -- FISH IMG STYLING START -- */
 .register-fish {
     /* hover fall back */
-    transform: scale(1);
     width: 5rem;
+    transform: scale(1);
     transition: transform 330ms ease-in-out;
 }
 .register-fish:hover {
@@ -66,6 +66,7 @@ BAD1C2
 .register-form__btn-container {
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
 .register-form__textBox-half {
@@ -98,53 +99,30 @@ BAD1C2
 
     font-size: 18px;
 
-    padding: 10px;
+    margin-bottom: 5px;
+
+    padding: 8px;
     text-decoration: none;
+
+    transition: background-color 330ms ease-in-out;
+    
+    width: 100%;
 }
 
 .register-form__btn:hover {
-
-}
-
-/* CSS */
-.button-1 {
-  background-color: #EA4C89;
-  border-radius: 8px;
-  border-style: none;
-  box-sizing: border-box;
-  color: #FFFFFF;
-  cursor: pointer;
-  display: inline-block;
-  font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 14px;
-  font-weight: 500;
-  height: 40px;
-  line-height: 20px;
-  list-style: none;
-  margin: 0;
-  outline: none;
-  padding: 10px 16px;
-  position: relative;
-  text-align: center;
-  text-decoration: none;
-  transition: color 100ms;
-  vertical-align: baseline;
-  user-select: none;
-  -webkit-user-select: none;
-  touch-action: manipulation;
-}
-
-.button-1:hover,
-.button-1:focus {
-  background-color: #F082AC;
+    background-color: #153462;
+    transition: background-color 330ms ease-in-out;
 }
 /* -- REGISTER BTN END -- */
 
 @media (max-width: 500px) {
+    .register-container {
+        min-height: 100vh;
+        min-height: -webkit-fill-available;
+    }
 
     .register-form__name-container {
         display: flex;
         flex-direction: column;
     }
-
 }

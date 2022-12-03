@@ -40,6 +40,7 @@ const Register = () => {
               </div>
               <div className="register-form__btn-container">
                 <button className="register-form__btn" onClick={handleRegister}>Register</button>
+                <Link to="/login" >Already have an account? Log in.</Link>
               </div>
             </div>
           </div>
